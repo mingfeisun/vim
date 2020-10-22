@@ -7,7 +7,7 @@ set wildmenu
 set showcmd
 set hlsearch
 set smartcase
-set autoindent
+" set autoindent
 set ruler
 set number
 " set relativenumber
@@ -54,21 +54,6 @@ set laststatus=2
 
 " tagbar
 nmap <F4> :TagbarToggle<CR>
-
-" latex
-filetype plugin on
-filetyp indent on
-let g:Tex_IgnoredWarnings=7
-let g:Tex_DefaultTargetFormat='pdf'
-set shellslash
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor='latex'
-set sw=2
-
-" YouCompleteMe
-let g:ycm_python_binary_path='usr/bin/python2'
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf =0
 
 " set current path as the path 
 set autochdir
